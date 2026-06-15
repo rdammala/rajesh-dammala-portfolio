@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajesh Dammala — Resume</title>
+    <title>Rajesh Dammala — SRE & Engineering Leadership Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', -apple-system, sans-serif;
             color: #1a1a2e;
-            line-height: 1.5;
+            line-height: 1.45;
             max-width: 850px;
             margin: 0 auto;
             padding: 2rem;
             background: #fff;
+            font-size: 0.85rem;
         }
 
         .print-bar {
             position: fixed;
             top: 0; left: 0; right: 0;
-            background: #1a1a2e;
+            background: #0d1117;
             color: #fff;
             padding: 0.75rem 2rem;
             display: flex;
@@ -30,7 +31,7 @@
             font-size: 0.85rem;
         }
         .print-bar button {
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #0f62fe, #00d4aa);
             border: none;
             color: #fff;
             padding: 0.5rem 1.2rem;
@@ -45,65 +46,72 @@
 
         header {
             text-align: center;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 1rem;
-            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #0f62fe;
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.2rem;
         }
-        header h1 { font-size: 1.8rem; font-weight: 700; color: #1a1a2e; }
-        header .tagline { font-size: 0.95rem; color: #555; margin: 0.3rem 0; }
+        header h1 { font-size: 1.7rem; font-weight: 700; color: #0d1117; }
+        header .tagline { font-size: 0.9rem; color: #555; margin: 0.25rem 0; }
         .contact-row {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: 1.2rem;
             flex-wrap: wrap;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             color: #555;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
         }
-        .contact-row a { color: #5a6fd6; text-decoration: none; }
+        .contact-row a { color: #0f62fe; text-decoration: none; }
 
         h2 {
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #5a6fd6;
+            color: #0f62fe;
             border-bottom: 1px solid #ddd;
-            padding-bottom: 0.3rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
+            padding-bottom: 0.25rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.6rem;
         }
 
-        .summary { font-size: 0.88rem; color: #333; line-height: 1.6; }
+        .summary { font-size: 0.83rem; color: #333; line-height: 1.55; }
 
-        .job { margin-bottom: 1.2rem; }
+        .job { margin-bottom: 1rem; }
         .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-        .job-title { font-weight: 600; font-size: 0.92rem; }
-        .job-company { font-size: 0.85rem; color: #555; }
-        .job-dates { font-size: 0.8rem; color: #777; }
-        .job ul { margin-top: 0.4rem; padding-left: 1.2rem; }
-        .job li { font-size: 0.83rem; color: #333; margin-bottom: 0.25rem; line-height: 1.5; }
+        .job-title { font-weight: 600; font-size: 0.88rem; }
+        .job-company { font-size: 0.82rem; color: #555; }
+        .job-dates { font-size: 0.78rem; color: #777; }
+        .job ul { margin-top: 0.3rem; padding-left: 1.1rem; }
+        .job li { font-size: 0.8rem; color: #333; margin-bottom: 0.2rem; line-height: 1.45; }
 
-        .skills-section { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 2rem; }
-        .skill-row { font-size: 0.83rem; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3rem 2rem; }
+        .skill-row { font-size: 0.8rem; }
         .skill-row strong { color: #1a1a2e; }
 
-        .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.3rem; }
+        .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.5rem; }
+        .project-item { font-size: 0.8rem; }
+        .project-item strong { color: #1a1a2e; }
+        .project-item span { color: #555; }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.25rem; }
         .tag {
-            padding: 0.2rem 0.5rem;
-            background: #f0f0f8;
-            border: 1px solid #e0e0ee;
+            padding: 0.15rem 0.45rem;
+            background: #f0f4ff;
+            border: 1px solid #e0e8f5;
             border-radius: 4px;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             color: #444;
         }
 
         @media print {
             .print-bar { display: none; }
             .resume-body { margin-top: 0; }
-            body { padding: 0.5cm; font-size: 9pt; }
-            header h1 { font-size: 14pt; }
-            h2 { font-size: 9pt; }
+            body { padding: 0.5cm; font-size: 8.5pt; }
+            header h1 { font-size: 13pt; }
+            h2 { font-size: 8.5pt; }
+            .job li { font-size: 8pt; }
+            .skill-row, .project-item { font-size: 8pt; }
         }
     </style>
 </head>
@@ -116,7 +124,7 @@
     <div class="resume-body">
         <header>
             <h1>Rajesh Dammala</h1>
-            <div class="tagline">Operations & Reliability Engineering Leader | Incident Management | SRE</div>
+            <div class="tagline">Senior Engineering Leader & SRE Program Lead</div>
             <div class="contact-row">
                 <span>📍 Morrisville, NC</span>
                 <a href="mailto:rajesh.dammala@gmail.com">rajesh.dammala@gmail.com</a>
@@ -129,54 +137,59 @@
 
         <h2>Professional Summary</h2>
         <p class="summary">
-            Operations and Reliability Engineering Leader with 16+ years leading incident management, production engineering, and operational excellence at Microsoft scale. Deep expertise in building incident response programs from scratch, establishing ITIL-aligned governance, and architecting AI-driven automation. Proven track record of improving operational efficiency (85% → 98%), reducing resolution times by 32%, and driving 30-35% automated incident resolution through AIOps. Skilled at leading global teams of 15-32 engineers through high-pressure crises while maintaining 100% SLA compliance.
+            Senior Engineering Leader and SRE Program Lead with 16+ years building and running mission-critical production systems at Microsoft and IBM. Deep expertise in site reliability engineering, AIOps-driven automation, incident management, and engineering team leadership. Architected AI-driven platforms achieving 30–35% automated incident resolution and ~$122K annual savings. Led global teams of up to 32 engineers, maintaining 99.9%+ platform availability across 20+ production services. Passionate about intelligent automation, operational excellence, and building resilient, self-healing systems.
         </p>
 
         <h2>Experience</h2>
 
         <div class="job">
             <div class="job-header">
-                <span class="job-title">Director, Incident & Operations Engineering — Xbox SRE</span>
+                <span class="job-title">Lead Escalations Manager — Xbox Customer Experience SRE</span>
                 <span class="job-dates">May 2021 – Present</span>
             </div>
-            <div class="job-company">Microsoft (via TechMahindra) • Redmond, WA → Morrisville, NC</div>
+            <div class="job-company">Microsoft Corporation (via TechMahindra/Allyis) | Redmond, WA (Remote from NC)</div>
             <ul>
-                <li>Built and led the incident response & operational excellence function for Xbox's 24/7/365 mission-critical platform serving millions of users across 20+ production services</li>
-                <li>Primary incident commander for high-severity incidents — coordinating war rooms, mobilizing cross-functional teams, driving escalation, and ensuring service restoration</li>
-                <li>Established ITIL-aligned governance: escalation frameworks, post-incident reviews, corrective action tracking, and operational standards achieving 100% SLA compliance</li>
-                <li>Drove operational efficiency from 85% to 98%; reduced resolution time by 32% through escalation framework redesign</li>
-                <li>Architected Azure SRE AI Agent — first AI-driven incident automation achieving 30-35% automated resolution</li>
-                <li>Authored 175+ runbooks and troubleshooting guides; eliminated 25,000+ stale incidents through KQL-based analysis</li>
-                <li>Managed and developed teams of 15-32 engineers across global locations; coaching, performance management, career development</li>
-                <li>Participated in SCRUM (Agile) ceremonies — sprint planning, daily standups, retrospectives — ensuring operational improvements aligned with sprint goals</li>
+                <li>Central authority for all high-severity (Sev 1/2) escalations across 20+ mission-critical production services in a 24/7/365 operational environment</li>
+                <li>Architected Azure SRE AI Agent platform — first AI-driven incident automation achieving 30–35% automated resolution, saving 150+ engineering hours/year (~$122K annual savings)</li>
+                <li>Led team adoption of AI Copilots for incident investigations — automated log extraction from Azure App Insights, auto-posted findings into ICM, enabled auto-updating of runbooks</li>
+                <li>Drove operational efficiency from 85% to 98% through systematic process improvements, alert optimization, and automation</li>
+                <li>Reduced issue resolution time (TTR) by 32% through escalation framework redesign</li>
+                <li>Managed CI/CD pipelines (Azure DevOps/Git) for production deployments; identified ADF pipeline trigger failures causing 60% of incidents</li>
+                <li>Streamlined 500+ alerts and remediated 25,000+ stale incidents/false positives — massively reducing operational toil</li>
+                <li>Authored 175+ troubleshooting guides/playbooks in 5 months — institutionalizing knowledge at scale</li>
+                <li>Led global on-call rotations and incident response (war rooms/bridge calls) with Engineering, Product, and Leadership</li>
+                <li>Participated in SCRUM (Agile) ceremonies — sprint planning, standups, retrospectives — aligning operational improvements with sprint goals</li>
+                <li>Mentored and coached engineers; drove performance planning and career development for team of 15+</li>
             </ul>
         </div>
 
         <div class="job">
             <div class="job-header">
-                <span class="job-title">Senior Technical Lead — Azure Support Operations</span>
+                <span class="job-title">Azure Support Technical Lead — Customer Support Services</span>
                 <span class="job-dates">Nov 2016 – May 2021</span>
             </div>
-            <div class="job-company">Microsoft (via Mindtree) • Redmond, WA</div>
+            <div class="job-company">Microsoft Corporation (via Mindtree) | Redmond, WA</div>
             <ul>
-                <li>Led cross-functional team of 15 engineers managing escalations and incident response for Azure enterprise customers</li>
-                <li>Managed high-severity Azure infrastructure incidents — capacity failures, AD outages, subscription-level disruptions</li>
-                <li>Drove 200+ product improvements from incident learnings through systematic bug reporting and cross-team collaboration</li>
-                <li>Improved escalation workflows reducing cycle time and enhancing customer satisfaction</li>
+                <li>Led team of 15 engineers driving enterprise customer support for Azure infrastructure services</li>
+                <li>Managed Azure Enterprise Agreement enrollments, subscription management, and capacity planning</li>
+                <li>Triaged advanced networking (TCP/IP, DNS, firewall), storage, and identity issues across multi-cloud environments</li>
+                <li>Spearheaded Azure Chat Support Initiatives improving response times; drove 200+ bug reports into engineering action</li>
+                <li>Cross-functional collaboration with Engineering, Product, and Account teams to resolve systemic issues</li>
             </ul>
         </div>
 
         <div class="job">
             <div class="job-header">
-                <span class="job-title">Operations Lead — Azure LiveSite Operations</span>
+                <span class="job-title">Operations Lead — Azure LiveSite Operations (WALS & WASU)</span>
                 <span class="job-dates">May 2012 – Nov 2016</span>
             </div>
-            <div class="job-company">Microsoft (via Mindtree) • Hyderabad, India</div>
+            <div class="job-company">Microsoft Corporation (via Mindtree) | Hyderabad, India → Redmond, WA</div>
             <ul>
-                <li>Led 32 engineers across global locations managing 24/7 incident detection and response for Azure platform</li>
-                <li>Deep-dive investigations into distributed systems failures at cluster-to-blade level</li>
-                <li>Built PowerShell automation for operational workflows, saving thousands of manual hours annually</li>
-                <li>Managed full incident lifecycle: detection, triage, escalation, resolution, and post-incident review</li>
+                <li>Led 32 engineers (12 senior + 20 service engineers) across Hyderabad and Redmond managing 24/7 Azure platform operations</li>
+                <li>Deep-dive technical investigations into complex production issues — cluster to blade level across compute, storage, and networking</li>
+                <li>Built PowerShell automation frameworks saving thousands of manual hours annually</li>
+                <li>Created 200+ bugs and feature upgrades during ICM, JIT, Azure KeyVault onboarding</li>
+                <li>Grew from Technical Senior Operations Engineer to Operations Lead through demonstrated leadership</li>
             </ul>
         </div>
 
@@ -185,24 +198,37 @@
                 <span class="job-title">Systems Analyst / Data Center Engineer</span>
                 <span class="job-dates">Sep 2009 – Nov 2011</span>
             </div>
-            <div class="job-company">IBM (via Infosoft) • Hammond, IN</div>
+            <div class="job-company">IBM (via Infosoft Inc) | Hammond, IN</div>
             <ul>
-                <li>Managed data center infrastructure including server lifecycle, cluster migrations, and enterprise patch management</li>
+                <li>Enterprise server builds, cluster configuration, large-scale data migrations, and hardware lifecycle management</li>
+                <li>Linux/Unix and Windows server configuration with enterprise storage/networking; patch deployment across infrastructure</li>
             </ul>
         </div>
 
+        <h2>Key Projects & Impact</h2>
+        <div class="projects-grid">
+            <div class="project-item"><strong>🤖 SRE AI Agent Platform</strong> — <span>Multi-agent orchestration for auto-triage, diagnosis, and resolution (30–35% automation rate)</span></div>
+            <div class="project-item"><strong>📊 Operational Excellence Dashboards</strong> — <span>Power BI + KQL for real-time SLA, incident trends, and executive MBR/QBR reporting</span></div>
+            <div class="project-item"><strong>🧠 AI Copilot Adoption</strong> — <span>Automated log extraction, ICM integration, runbook auto-updates (~$122K savings)</span></div>
+            <div class="project-item"><strong>🔧 Escalation Framework Redesign</strong> — <span>Structured triage, ownership clarity, automated routing (32% TTR reduction)</span></div>
+            <div class="project-item"><strong>🧹 Alert Optimization</strong> — <span>Streamlined 500+ alerts, eliminated 25K+ stale incidents, suppression rules</span></div>
+            <div class="project-item"><strong>🔄 ADF Pipeline Reliability</strong> — <span>Identified 60% of incidents linked to trigger failures; drove optimization roadmap</span></div>
+        </div>
+
         <h2>Core Competencies</h2>
-        <div class="skills-section">
-            <div class="skill-row"><strong>Incident Management:</strong> Incident Command, Escalation Design, On-Call (24/7), War Rooms, Blameless Reviews</div>
-            <div class="skill-row"><strong>Cloud & SRE:</strong> Azure, Distributed Systems, AppInsights, ICM, Monitoring & Observability</div>
-            <div class="skill-row"><strong>Data & Automation:</strong> Kusto/KQL, Power BI, AIOps, PowerShell, CI/CD Pipelines</div>
-            <div class="skill-row"><strong>Processes:</strong> SCRUM (Agile), ITIL-Aligned Practices, SLA/SLO/SLI, Change Management, ServiceNow</div>
-            <div class="skill-row"><strong>Communications:</strong> Executive Briefings, War Room Coordination, Crisis Comms, Customer Escalation</div>
-            <div class="skill-row"><strong>Leadership:</strong> Team Development (15-32 engineers), Global Coordination, Vendor Management, Governance</div>
+        <div class="two-col">
+            <div class="skill-row"><strong>SRE:</strong> SLAs/SLOs/SLIs, Error Budgets, Observability, Fleet Management, Capacity Planning</div>
+            <div class="skill-row"><strong>AIOps:</strong> Azure SRE Agent, Auto-Remediation, Intelligent Alerting, Copilot Development, Multi-Agent</div>
+            <div class="skill-row"><strong>Cloud:</strong> Azure, Kubernetes, Networking, Storage, Active Directory, Data Center Engineering</div>
+            <div class="skill-row"><strong>Data:</strong> Kusto/KQL, Power BI, App Insights, Geneva, Log Analytics, Telemetry</div>
+            <div class="skill-row"><strong>DevOps:</strong> Azure DevOps, Git, CI/CD Pipelines, YAML, ARM/Bicep, SCRUM (Agile)</div>
+            <div class="skill-row"><strong>Scripting:</strong> PowerShell, Python, Logic Apps, Data Factory, REST APIs</div>
+            <div class="skill-row"><strong>Leadership:</strong> Team Building (15–32 engineers), Hiring, Mentorship, Global Coordination</div>
+            <div class="skill-row"><strong>Incident Mgmt:</strong> Sev 1/2 Command, War Rooms, RCA, Post-Incident Review, Disaster Recovery</div>
         </div>
 
         <h2>Education & Certifications</h2>
-        <p style="font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>B.E. Computer Science</strong> | JNTU Hyderabad • 2008</p>
+        <p style="font-size: 0.82rem; margin-bottom: 0.4rem;"><strong>B.E. Computer Science</strong> | JNTU Hyderabad • 2008</p>
         <div class="tags">
             <span class="tag">Azure Infrastructure (70-533, 70-534)</span>
             <span class="tag">AZ-900 Fundamentals</span>
@@ -210,7 +236,6 @@
             <span class="tag">Google Generative AI</span>
             <span class="tag">TechMahindra AI White Belt</span>
         </div>
-        <p style="font-size: 0.8rem; color: #777; margin-top: 0.5rem;">Extensive hands-on ITIL experience (Incident, Problem, Change Management); not ITIL certified.</p>
     </div>
 </body>
 </html>
